@@ -27,11 +27,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
 		<dependency>
-			<groupId>org.sonarsource.scanner.maven</groupId>
+			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
-			<version>3.6.0.1398</version>
+			<version>4.0.0.4121</version>
+			<type>pom</type>
 		</dependency>
+
 
 
 		<dependency>
