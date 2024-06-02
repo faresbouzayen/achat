@@ -13,11 +13,11 @@
 	<name>achat</name>
 	<description>Projet pour le module DevOps</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
         <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version> <!-- Updated SonarQube plugin version -->
         <sonar.host.url>http://172.26.1.139:9000</sonar.host.url>
-		<sonar.token>squ_891968889d1c513723b5e14f2a365807c3f7a16c</sonar.token>
+		<sonar.token>squ_5588e5efd06ca9412073becccfd84af0182c56df</sonar.token>
 	</properties>
 	<dependencies>
 		<dependency>
