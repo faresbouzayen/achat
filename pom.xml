@@ -82,22 +82,35 @@
 
 	<!-- Build Configuration -->
 	<build>
-		<plugins>
-			<!-- Spring Boot Maven Plugin -->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	<plugins>
+		<!-- Spring Boot Maven Plugin -->
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<configuration>
+				<excludes>
+					<exclude>
+						<groupId>org.projectlombok</groupId>
+						<artifactId>lombok</artifactId>
+					</exclude>
+				</excludes>
+			</configuration>
+		</plugin>
+
+		<!-- Surefire Plugin for running tests -->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>3.0.0</version> <!-- Adjust version as needed -->
+			<configuration>
+				<includes>
+					<include>**/*Test.java</include>
+				</includes>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
 
 	<!-- Distribution Management -->
 	<distributionManagement>
