@@ -33,10 +33,10 @@ public class StockServiceImplTest {
 	@Order(1)
 	void testDeleteStock() {
 		Long stockId = 1L;
-		when(stockRepository.existsById(stockId)).thenReturn(true);
 		stockService.deleteStock(stockId);
 		verify(stockRepository, times(1)).deleteById(stockId);
 	}
+
 
 	@Test
 	@Order(2)
